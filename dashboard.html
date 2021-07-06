@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="dashbody" onload="getCurrentUser()">
+    <div id="Dashboard" class="container-fluid">
+        <div class="alert alert-dark container-fluid" role="alert" id="message"> </div>
+        <div class="row">
+            <div class="col-3 h-100">
+                <h1>Profile Info</h1>
+                <img id="profileImage" src="https://scontent.fkhi8-1.fna.fbcdn.net/v/t1.6435-9/147743514_2847778685478384_4634786546322019593_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=n8qfko6SLuAAX_gCQjn&_nc_ht=scontent.fkhi8-1.fna&oh=b30b8cba592ab11c6243fe2918df9c71&oe=60E73527" alt="">
+                <h6 id="name"></h6>
+                <h6 id="Fname"></h6>
+                <h6 id="phoneno"></h6>
+                <h6 id="address"></h6>
+                <button type="button" class="btn btn-danger" onclick="onLogout()">Logout</button>
+            </div>
+            <div class="col-9 h-100">
+                <h1>Dashboard</h1>
+                <input type="text" id="title" placeholder="Add Title to the post">
+                <input name="post" id="post" placeholder="Enter What's on your mind......">
+                <button class="btn btn-primary" onclick="onPost()">Post</button>
+              <ul id="postCard">
+
+              </ul>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

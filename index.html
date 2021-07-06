@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user signInBx">
+                <div class="imageBx">
+                    <img src="https://images.pexels.com/photos/7470311/pexels-photo-7470311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                </div>
+                <div class="formBx">
+                    <form onSubmit="return false">
+                        <h2>Sign Up</h2>
+                        <input type="text" id="name"  placeholder="Name">
+                        <input type="text" id="fname" placeholder="Father's Name">
+                        <input type="text" id="phoneno"  placeholder="Phone No.">
+                        <input type="text" id="address"  placeholder="Address"> 
+                        <input type="text" id="email"  placeholder="Username">
+                        <input type="password" id="password"  placeholder="Password">
+                        <input type="submit" value="Sign Up" onclick="onSignup()">
+                        <p class="login">Have an account? <a href="login.html"> Log in </a></p>
+                        <div class="message" id="message" ></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
